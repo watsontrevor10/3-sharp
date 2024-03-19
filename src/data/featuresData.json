@@ -2,15 +2,15 @@
     {
         "id": 1,
         "title": "The Best Band",
-        "content": "Say goodbye to meal planning stress! With NutriTrack, planning your meals becomes a breeze. Our user-friendly Notion template lets you create customized daily or weekly meal plans effortlessly. Enjoy a balanced and nutritious diet without the hassle.",
+        "content": "Hiring 3# for your event guarantees an unforgettable experience that resonates with sophistication and style. With their impeccable blend of classic jazz and modern flair, 3# brings a unique energy that sets the perfect tone for weddings and corporate gatherings alike. Their seamless performances create an ambiance of elegance and charm, elevating the atmosphere and leaving a lasting impression on guests.",
         "align": "right",
-        "image": "/images/features1.png"
+        "image": "/images/cool-band.jpeg"
     },
     {
         "id": 1,
         "title": "Professional Blokes",
-        "content": "We've got your grocery shopping covered! NutriTrack includes a handy shopping list feature. As you plan your meals, the template automatically generates a comprehensive shopping list. No more forgotten items or aimless wandering in the supermarket. Shopping for healthy ingredients has never been easier!",
+        "content": "Beyond their musical prowess, 3# is committed to exceeding expectations, tailoring their repertoire to suit the specific needs and preferences of each client. Whether it's creating a romantic backdrop for a wedding ceremony or providing lively entertainment for a corporate function, 3# brings professionalism, versatility, and an unwavering dedication to ensuring your event is a resounding success.",
         "align": "left",
-        "image": "/images/features2.png"
+        "image": "/images/standing.jpeg"
     }
 ]
