@@ -28,7 +28,7 @@ import Column from "@/components/Column.astro";
         <SectionContainer class="page-banner--container py-16">
             <SectionContainer
                 id="about"
-                class="features page-banner--inner-container wrap wrap-px z-10"
+                class="features page-banner--inner-container wrap wrap-px"
             >
                 <PageTitle class="text-center mx-auto" type="default">
                     Professional Utah-Based Jazz Trio
@@ -43,7 +43,7 @@ import Column from "@/components/Column.astro";
             </SectionContainer>
             <!-- Features -->
             <SectionContainer
-                class="feature-tabs page-banner--inner-container wrap wrap-px z-10"
+                class="feature-tabs page-banner--inner-container wrap wrap-px z-10 pt-20"
             >
                 <PageTitle class="text-center mx-auto" type="default">
                     Meet The Band
@@ -55,7 +55,7 @@ import Column from "@/components/Column.astro";
                     </p>
                 </Content>
                 <CardGroup
-                    class="grid scroll-m-24 gap-8 grid-cols-1 max-w-4xl mx-auto mt-24 md:grid-cols-2"
+                    class="grid scroll-m-24 gap-8 grid-cols-1 max-w-4xl mx-auto mt-24 md:grid-cols-3"
                 >
                     <Card class="col-span-1 text-black-900">
                         <CardBody class="w-full bg-primary-800 p-12">
@@ -128,12 +128,12 @@ import Column from "@/components/Column.astro";
                     </Card>
                 </CardGroup>
             </SectionContainer>
-            <!-- More Features -->
+            <!-- Testimonials and music -->
             <SectionContainer
                 id="testimonials"
-                class="benefits page-banner--inner-container wrap wrap-px z-10"
+                class="benefits page-banner--inner-container wrap wrap-px z-10 pt-10"
             >
-                <PageTitle class="text-center mx-auto" type="default">
+                <PageTitle class="text-center mx-auto pt-3" type="default">
                     Hear What 3# Has to Offer
                 </PageTitle>
                 <div class="flex justify-center">
@@ -145,12 +145,13 @@ import Column from "@/components/Column.astro";
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
                 </div>
-                <Column columnData={testimonialData} />
+                <!-- add these back in when we get reviews in -->
+                <!-- <Column columnData={testimonialData} /> -->
             </SectionContainer>
             <!-- Contact -->
             <SectionContainer
                 id="contact"
-                class="page-banner--inner-container wrap wrap-px z-10 pt-10"
+                class="page-banner--inner-container wrap wrap-px z-10 pt-20"
             >
                 <PageTitle class="text-center mx-auto" type="default">
                     Contact The Band
@@ -159,7 +160,7 @@ import Column from "@/components/Column.astro";
             </SectionContainer>
             <!-- Testimonials -->
             <SectionContainer id="faq" class="faq">
-                <PageTitle class="text-center mx-auto" type="default">
+                <PageTitle class="text-center mx-auto pt-5" type="default">
                     Frequently Asked Questions
                 </PageTitle>
                 <Accordion accordionData={faqData} />
