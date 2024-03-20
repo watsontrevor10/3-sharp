@@ -1,15 +1,15 @@
 [
     {
         "id": 1,
-        "title": "The Best Band",
-        "content": "Hiring 3# for your event guarantees an unforgettable experience that resonates with sophistication and style. With their impeccable blend of classic jazz and modern flair, 3# brings a unique energy that sets the perfect tone for weddings and corporate gatherings alike. Their seamless performances create an ambiance of elegance and charm, elevating the atmosphere and leaving a lasting impression on guests.",
+        "title": "A History of Greatness",
+        "content": "3# began while the Ammon, Matt and Trevor were studying music at Brigham Young University. They bonded over their love of jazz and improvisation and played in many ensembles together. After going their separate ways after BYU, they eventually reunited to form 3# and bring their love of jazz to everyone around them. 3# was formed in 2015, and has continued to be a source of friendship and music for them.",
         "align": "right",
         "image": "/images/cool-band.jpeg"
     },
     {
         "id": 1,
-        "title": "Professional Blokes",
-        "content": "Beyond their musical prowess, 3# is committed to exceeding expectations, tailoring their repertoire to suit the specific needs and preferences of each client. Whether it's creating a romantic backdrop for a wedding ceremony or providing lively entertainment for a corporate function, 3# brings professionalism, versatility, and an unwavering dedication to ensuring your event is a resounding success.",
+        "title": "Unique and Professional",
+        "content": "As long-time performing musicians, 3# understands that audiences want to have a good time at events and they want exceptional music to help turn an event into something memorable. The trio brings a joy and spontaneity to every event. They endeavor to make every performance unique to match the feel of every event. From formal weddings and corporate events to private low-key events and parties, 3# knows how to make music to fit an ambiance.",
         "align": "left",
         "image": "/images/standing.jpeg"
     }

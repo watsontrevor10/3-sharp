@@ -4,17 +4,12 @@ import SectionContainer from "@/components/SectionContainer.astro";
 import faqData from "@/data/faqData.json";
 import testimonialData from "@/data/testimonialData.json";
 import featuresData from "@/data/featuresData.json";
-import { Icon } from "astro-icon";
 import Accordion from "@/components/Accordion.astro";
 import HomeBanner from "@/components/HomeBanner.astro";
-import { MotionBTTContainer } from "@/components/motion/MotionBTTContainer";
-import BadgeGroup from "@/components/badge/BadgeGroup.astro";
-import BadgeMessage from "@/components/badge/BadgeMessage.astro";
 import PageTitle from "@/components/PageTitle.astro";
 import Contact from "@/components/Contact.astro";
 import Content from "@/components/Content.astro";
 import ContentImage from "@/components/ContentImage.astro";
-import BadgeIcon from "@/components/badge/BadgeIcon.astro";
 import CardGroup from "@/components/card/CardGroup.astro";
 import Card from "@/components/card/Card.astro";
 import CardBody from "@/components/card/CardBody.astro";
@@ -24,90 +19,120 @@ import Column from "@/components/Column.astro";
 ---
 
 <Layout
-    title="3# Jazz Trio - Utah Jazz Trio"
-    description="3# is a premier jazz trio based in Utah. They play weddings, corporate events and other high-profile events that require a professional and classy touch."
+    title="3# Jazz Trio - Utah Jazz Ensemble"
+    description="3# is a premier jazz trio based in Utah. They play weddings, corporate events and other events that require a professional and classy touch."
 >
     <div class="main-wrapper bg-[#F3F5F8] relative z-10 pb-20 pt-20">
         <HomeBanner />
         <!-- Home Banner -->
-        <SectionContainer
-            class="components--container wrap wrap-px grid gap-8 sm:gap-24"
-        >
-            <SectionContainer id="about" class="features">
+        <SectionContainer class="page-banner--container py-16">
+            <SectionContainer
+                id="about"
+                class="features page-banner--inner-container wrap wrap-px z-10"
+            >
                 <PageTitle class="text-center mx-auto" type="default">
-                    Professional Utah Based Jazz Trio
+                    Professional Utah-Based Jazz Trio
                 </PageTitle>
                 <Content class="text-center" alignment="center">
                     <p>
-                        3# is the band you want if you want the best possible
-                        thing for yourself. We're just the best ever.
+                        3# has been performing together for over a decade, and
+                        brings that wealth of experience to any event.
                     </p>
                 </Content>
                 <ContentImage contentImageData={featuresData} />
             </SectionContainer>
             <!-- Features -->
-            <SectionContainer class="feature-tabs">
+            <SectionContainer
+                class="feature-tabs page-banner--inner-container wrap wrap-px z-10"
+            >
                 <PageTitle class="text-center mx-auto" type="default">
-                    As Good as Any of the Big Boys in Salt Lake
+                    Meet The Band
                 </PageTitle>
                 <Content class="text-center" alignment="center">
                     <p>
-                        Meet 3#, a Utah-based jazz trio specializing in weddings
-                        and corporate events. With their fusion of classic jazz
-                        and contemporary charm, 3# creates an elegant ambiance
-                        that captivates and inspires. From soulful melodies to
-                        lively improvisations, their music enhances the magic of
-                        every celebration.
+                        Meet 3#, the Utah-based jazz trio specializing in
+                        bringing engaging jazz music to every event.
                     </p>
                 </Content>
                 <CardGroup
                     class="grid scroll-m-24 gap-8 grid-cols-1 max-w-4xl mx-auto mt-24 md:grid-cols-2"
                 >
                     <Card class="col-span-1 text-black-900">
-                        <CardBody class="w-full bg-primary-400/20 p-12">
+                        <CardBody class="w-full bg-primary-800 p-12">
                             <CardImage
                                 src="/images/ammon-horiz.jpeg"
-                                alt="Customizable Layouts image used."
+                                alt="Ammon Doman playing piano"
                             />
                             <CardHeader
                                 class="!text-black !text-2xl !font-bold"
                             >
-                                Customizable Layouts
+                                Ammon Doman
                             </CardHeader>
                             <p>
-                                3# embodies professionalism in every aspect.
-                                With extensive experience at weddings and
-                                corporate events, they ensure a seamless and
-                                memorable experience for clients and guests
-                                alike, making them the ideal choice for any
-                                special occasion.
+                                A pianist with a passion for jazz harmony and
+                                improvisation. Ammon brings a wealth of
+                                knowledge with degrees from both Brigham Young
+                                University and the University of Northern
+                                Colorado in Jazz Piano Performance. Ammon not
+                                only has the skills and knowledge, but also
+                                brings joy and passion to his playing, which
+                                elevates any performance to another level.
                             </p>
                         </CardBody>
                     </Card>
                     <Card class="col-span-1 text-black-900">
-                        <CardBody class="w-full bg-primary-400/20 p-12">
+                        <CardBody class="w-full bg-primary-800 p-12">
                             <CardImage
                                 src="/images/matt-horiz.jpeg"
-                                alt="Progress Tracking image used."
+                                alt="Matt Tippetts playing drums"
                             />
                             <CardHeader
                                 class="!text-black !text-2xl !font-bold"
                             >
-                                Progress Tracking
+                                Matt Tippetts
                             </CardHeader>
                             <p>
-                                With responsive communication and keen attention
-                                to client needs, they ensure a stress-free
-                                planning process. Working with 3# is always a
-                                delightful and rewarding experience for clients
-                                and collaborators alike.
+                                A percussionist and educator with degrees from
+                                Brigham Young University and Michigan State
+                                University, Matt loves playing and teaching
+                                percussion. His groove is undeniably tight, and
+                                his knowledge and mastery of style and genre is
+                                second to none. Matt brings something special to
+                                each and every performance and enhances any
+                                piece he plays.
+                            </p>
+                        </CardBody>
+                    </Card>
+                    <Card class="col-span-1 text-black-900">
+                        <CardBody class="w-full bg-primary-800 p-12">
+                            <CardImage
+                                src="/images/trevor-bnw.jpeg"
+                                alt="Trevor Watson holding the electric bass"
+                            />
+                            <CardHeader
+                                class="!text-black !text-2xl !font-bold"
+                            >
+                                Trevor Watson
+                            </CardHeader>
+                            <p>
+                                Bassist, educator and military musician, Trevor
+                                rounds out the ensemble by holding down the
+                                groove and introducing unique sonic flavors to
+                                compliment each solo. With a degree from Brigham
+                                Young University and a career as a military
+                                musician spanning more than a decade, Trevor has
+                                the skills to fit into any style as both an
+                                ensemble member and soloist.
                             </p>
                         </CardBody>
                     </Card>
                 </CardGroup>
             </SectionContainer>
             <!-- More Features -->
-            <SectionContainer id="testimonials" class="benefits">
+            <SectionContainer
+                id="testimonials"
+                class="benefits page-banner--inner-container wrap wrap-px z-10"
+            >
                 <PageTitle class="text-center mx-auto" type="default">
                     Hear What 3# Has to Offer
                 </PageTitle>
@@ -123,7 +148,10 @@ import Column from "@/components/Column.astro";
                 <Column columnData={testimonialData} />
             </SectionContainer>
             <!-- Contact -->
-            <SectionContainer id="contact">
+            <SectionContainer
+                id="contact"
+                class="page-banner--inner-container wrap wrap-px z-10 pt-10"
+            >
                 <PageTitle class="text-center mx-auto" type="default">
                     Contact The Band
                 </PageTitle>
@@ -131,9 +159,6 @@ import Column from "@/components/Column.astro";
             </SectionContainer>
             <!-- Testimonials -->
             <SectionContainer id="faq" class="faq">
-                <BadgeGroup alignment="center">
-                    <BadgeMessage>FAQ</BadgeMessage>
-                </BadgeGroup>
                 <PageTitle class="text-center mx-auto" type="default">
                     Frequently Asked Questions
                 </PageTitle>
