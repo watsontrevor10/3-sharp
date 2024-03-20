@@ -20,7 +20,7 @@ const year = date.getFullYear();
                     <div class="footer--logo grid gap-8">
                         <a href="/">
                             <Image
-                                src="/nutritrack.svg"
+                                src="/logo-trans.png"
                                 alt="logo"
                                 class="h-6 w-auto"
                                 height={24}
@@ -32,11 +32,11 @@ const year = date.getFullYear();
                         <ButtonGroup alignment="left">
                             <a
                                 role="button"
-                                href="https://github.com/christian-luntok/astro-nutritrack"
-                                class="btn btn--secondary"
+                                href="/#contact"
+                                class="btn btn--secondary ml-4"
                             >
-                                Get Template
-                                <Icon name="mdi:arrow-right" class="w-6" />
+                                Book The Band
+                                <!-- <Icon name="mdi:arrow-right" class="w-6" /> -->
                             </a>
                         </ButtonGroup>
                     </div>
@@ -76,9 +76,16 @@ const year = date.getFullYear();
     <SectionContainer class="footer-credits relative z-10">
         <div class="wrap wrap-px py-6">
             <p class="my-0">
-                © {year} Nutritrack. All rights reserved{" - "}
+                © {year} 3# Jazz Trio {" - "}
                 <span class="font-normal">
-                    A template by{" "}
+                    Website built by{" "}
+                    <a
+                        class="transition-colors duration-300 hover:text-secondary-700"
+                        href="https://www.trevorwatson.me"
+                        target="_blank">Watson Creative, LLC</a
+                    >
+                    {" - "}
+                    Template provided by{" "}
                     <a
                         class="transition-colors duration-300 hover:text-secondary-700"
                         href="https://chrstnl.com"

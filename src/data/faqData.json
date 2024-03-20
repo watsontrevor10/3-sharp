@@ -1,26 +1,26 @@
 [
     {
         "id": 1,
-        "title": "What is Notion?",
+        "title": "What does it cost to book the band?",
         "isOpen": true,
-        "content": "Notion is an all-in-one productivity tool that allows you to create notes, databases, and collaborative workspaces, making it easy to organize and manage your tasks, projects, and ideas in one place."
+        "content": "Cost depends a lot on a few factors like: amount of time you want the band playing, travel distance, and special request songs if any. Send us a message and we'd love to coordinate with you to get a specific price for your specific events needs."
     },
     {
         "id": 2,
-        "title": "Who is this template for?",
+        "title": "What kinds of music do you play?",
         "isOpen": false,
-        "content": "This template is specifically designed for Notion creators who want to create a personalized landing page for their Notion workspace, showcasing their projects, services, or content in a visually appealing manner."
+        "content": "We primarily play jazz standards from the Great American Songbook as well as some other jazz tunes that we enjoy. We also have some original compositions and more modern songs that we throw in as the occasion demands."
     },
     {
         "id": 3,
-        "title": "Do I need to pay for this?",
+        "title": "What kind of music and sound equipment can the band provide for my event?",
         "isOpen": false,
-        "content": "No, this is free."
+        "content": "We provide all the instruments, obviously, but we can also provide a PA and microphones as needed for announcements and MC needs. Drop us a message for more details about equipment needs for your event."
     },
     {
         "id": 5,
-        "title": "Where can I ask more questions about this template?",
+        "title": "If I wanted a singer or another instrument, do you guys work with other musicians too?",
         "isOpen": false,
-        "content": "If you have any further questions or need assistance regarding this template, please feel free to reach out to me on my website, or click the Contact within the navigation links."
+        "content": "We do! While we are a jazz trio, we have a number of local musicians that we enjoy working with and can bring on as the occasion requires. Let us know what you're thinking for your event and we can try to accommodate!"
     }
 ]

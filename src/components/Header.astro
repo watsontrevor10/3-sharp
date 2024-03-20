@@ -2,6 +2,7 @@
 import SectionContainer from "./SectionContainer.astro";
 import Nav from "./Nav.astro";
 import ButtonGroup from "./button/ButtonGroup.astro";
+import Button from "./button/Button.astro";
 import { Icon } from "astro-icon";
 import { Image } from "@astrojs/image/components";
 import navData from "@/data/navData.json";
@@ -29,14 +30,9 @@ import navData from "@/data/navData.json";
         <SectionContainer class="flex items-center ml-auto">
             <Nav navItems={navData} />
             <ButtonGroup class="hidden md:block">
-                <a
-                    role="button"
-                    href="https://github.com/christian-luntok/astro-nutritrack"
-                    class="btn btn--secondary ml-4"
-                >
+                <Button href="/#contact" class="btn ml-4" variant="secondary">
                     Book The Band
-                    <Icon name="mdi:arrow-right" class="w-6" />
-                </a>
+                </Button>
             </ButtonGroup>
         </SectionContainer>
     </SectionContainer>

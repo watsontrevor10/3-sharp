@@ -11,6 +11,7 @@ import { MotionBTTContainer } from "@/components/motion/MotionBTTContainer";
 import BadgeGroup from "@/components/badge/BadgeGroup.astro";
 import BadgeMessage from "@/components/badge/BadgeMessage.astro";
 import PageTitle from "@/components/PageTitle.astro";
+import Contact from "@/components/Contact.astro";
 import Content from "@/components/Content.astro";
 import ContentImage from "@/components/ContentImage.astro";
 import BadgeIcon from "@/components/badge/BadgeIcon.astro";
@@ -32,11 +33,7 @@ import Column from "@/components/Column.astro";
         <SectionContainer
             class="components--container wrap wrap-px grid gap-8 sm:gap-24"
         >
-            <SectionContainer id="bandIntro" class="features">
-                <BadgeGroup alignment="center">
-                    <BadgeMessage>The Band</BadgeMessage>
-                    <BadgeIcon icon="mdi:star-circle-outline" />
-                </BadgeGroup>
+            <SectionContainer id="about" class="features">
                 <PageTitle class="text-center mx-auto" type="default">
                     Professional Utah Based Jazz Trio
                 </PageTitle>
@@ -50,10 +47,6 @@ import Column from "@/components/Column.astro";
             </SectionContainer>
             <!-- Features -->
             <SectionContainer class="feature-tabs">
-                <BadgeGroup alignment="center">
-                    <BadgeMessage>The Band</BadgeMessage>
-                    <BadgeIcon icon="twemoji:waving-hand" />
-                </BadgeGroup>
                 <PageTitle class="text-center mx-auto" type="default">
                     As Good as Any of the Big Boys in Salt Lake
                 </PageTitle>
@@ -62,16 +55,16 @@ import Column from "@/components/Column.astro";
                         Meet 3#, a Utah-based jazz trio specializing in weddings
                         and corporate events. With their fusion of classic jazz
                         and contemporary charm, 3# creates an elegant ambiance
-                        that captivates guests and clients alike. From soulful
-                        melodies to lively improvisations, their music enhances
-                        the magic of every celebration.
+                        that captivates and inspires. From soulful melodies to
+                        lively improvisations, their music enhances the magic of
+                        every celebration.
                     </p>
                 </Content>
                 <CardGroup
                     class="grid scroll-m-24 gap-8 grid-cols-1 max-w-4xl mx-auto mt-24 md:grid-cols-2"
                 >
-                    <Card class="col-span-1 text-primary-900">
-                        <CardBody class="w-full bg-white-600/20 p-12">
+                    <Card class="col-span-1 text-black-900">
+                        <CardBody class="w-full bg-primary-400/20 p-12">
                             <CardImage
                                 src="/images/ammon-horiz.jpeg"
                                 alt="Customizable Layouts image used."
@@ -91,8 +84,8 @@ import Column from "@/components/Column.astro";
                             </p>
                         </CardBody>
                     </Card>
-                    <Card class="col-span-1 text-primary-900">
-                        <CardBody class="w-full bg-white-600/20 p-12">
+                    <Card class="col-span-1 text-black-900">
+                        <CardBody class="w-full bg-primary-400/20 p-12">
                             <CardImage
                                 src="/images/matt-horiz.jpeg"
                                 alt="Progress Tracking image used."
@@ -115,11 +108,9 @@ import Column from "@/components/Column.astro";
             </SectionContainer>
             <!-- More Features -->
             <SectionContainer id="testimonials" class="benefits">
-                <BadgeGroup alignment="left">
-                    <BadgeMessage>Music</BadgeMessage>
-                    <BadgeIcon icon="twemoji:waving-hand" />
-                </BadgeGroup>
-                <PageTitle class="" type="default">Some 3# Jams</PageTitle>
+                <PageTitle class="text-center mx-auto" type="default">
+                    Hear What 3# Has to Offer
+                </PageTitle>
                 <div class="flex justify-center">
                     <iframe
                         width="560"
@@ -131,16 +122,20 @@ import Column from "@/components/Column.astro";
                 </div>
                 <Column columnData={testimonialData} />
             </SectionContainer>
+            <!-- Contact -->
+            <SectionContainer id="contact">
+                <PageTitle class="text-center mx-auto" type="default">
+                    Contact The Band
+                </PageTitle>
+                <Contact />
+            </SectionContainer>
             <!-- Testimonials -->
             <SectionContainer id="faq" class="faq">
                 <BadgeGroup alignment="center">
                     <BadgeMessage>FAQ</BadgeMessage>
                 </BadgeGroup>
                 <PageTitle class="text-center mx-auto" type="default">
-                    Got some burning questions about NutriTrack?
-                    <br />
-                    <br />
-                    No worries! We&apos;ve got the answers you need:
+                    Frequently Asked Questions
                 </PageTitle>
                 <Accordion accordionData={faqData} />
             </SectionContainer>
