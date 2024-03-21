@@ -4,11 +4,8 @@
 import "../styles/globals.scss";
 import SEO from "@/components/seo/SEO.astro";
 import Header from "@/components/Header.astro";
-import { SOCIALS } from "@config";
 import Footer from "@/components/Footer.astro";
 import footerNavData from "@/data/footerNavData.json";
-
-const currentYear = new Date().getFullYear();
 
 const {
     class: className,
@@ -16,7 +13,6 @@ const {
     description,
     keywords,
     url,
-    twitterhandle,
     image
 } = Astro.props;
 ---

@@ -3,26 +3,18 @@
 import type { Site, SocialMediaObjects } from "./types";
 
 export const SITE: Site = {
-    siteUrl: "https:/www.astro-nutritrack.chrstnl.com/", // Always put "/" at the end of the URL
-    author: "chrstnl",
-    desc: "A personal portfolio landing template for developers and designers.",
-    title: "Astro Nutritrack",
-    ogImage: "images/astro-nutritrack.png",
-    keywords:
-        "Personal portfolio, landing page, page template, developer portfoliom designer portfolio",
+    siteUrl: "https:/www.threesharp.com/", // Always put "/" at the end of the URL
+    author: "Trevor Watson",
+    desc: "Band website for 3# Jazz Trio, a Utah-based jazz ensemble.",
+    title: "3# Jazz Trio",
+    ogImage: "images/logo-trans.png",
+    keywords: "Jazz trio, three sharp, 3#, utah jazz ensemble",
     postPerPage: 3
 };
 
 // The site uses iconify - you can find icons on https://iconify.design/.
 
 export const SOCIALS: SocialMediaObjects = [
-    {
-        name: "Github",
-        href: "https://github.com/christian-luntok/astro-nutritrack/",
-        icon: "ph:github-logo-duotone",
-        title: `Follow ${SITE.author} on Github`,
-        active: true
-    },
     {
         name: "Facebook",
         href: "https://github.com/christian-luntok/astro-nutritrack/",
@@ -38,59 +30,10 @@ export const SOCIALS: SocialMediaObjects = [
         active: true
     },
     {
-        name: "LinkedIn",
-        href: "https://github.com/christian-luntok/astro-nutritrack/",
-        icon: "ph:linkedin-logo-duotone",
-        title: `Follow ${SITE.title} on LinkedIn`,
-        active: true
-    },
-    {
-        name: "Mail",
-        href: "mailto:yourmail@gmail.com",
-        title: `Send an email to ${SITE.title}`,
-        icon: "",
-        active: false
-    },
-    {
-        name: "Twitter",
-        href: "https://github.com/christian-luntok/astro-nutritrack/",
-        icon: "ph:twitter-logo-duotone",
-        title: `Follow ${SITE.author} on Twitter`,
-        active: true
-    },
-    {
         name: "YouTube",
         href: "https://github.com/christian-luntok/astro-nutritrack/",
         icon: "",
         title: `${SITE.title} on YouTube`,
-        active: false
-    },
-    {
-        name: "WhatsApp",
-        href: "https://github.com/christian-luntok/astro-nutritrack/",
-        icon: "",
-        title: `${SITE.title} on WhatsApp`,
-        active: false
-    },
-    {
-        name: "Snapchat",
-        href: "https://github.com/christian-luntok/astro-nutritrack/",
-        icon: "",
-        title: `${SITE.title} on Snapchat`,
-        active: false
-    },
-    {
-        name: "CodePen",
-        href: "https://github.com/christian-luntok/astro-nutritrack/",
-        icon: "",
-        title: `${SITE.title} on CodePen`,
-        active: false
-    },
-    {
-        name: "Discord",
-        href: "https://github.com/christian-luntok/astro-nutritrack/",
-        icon: "",
-        title: `${SITE.title} on Discord`,
         active: false
     }
 ];

@@ -18,30 +18,37 @@ const { navItems } = Astro.props;
         <div class="header-nav--menu-container z-20 hide" id="navbar-default">
             <ul class="header-nav--menu">
                 {
-                    navItems.map((item) => (
-                        <li class="header-nav--menu-item">
-                            <a
-                                href={item.href}
-                                class={`menu-item--link flex items-center ${
-                                    Astro.url.pathname === item.href
-                                        ? "active"
-                                        : ""
-                                }
+                    navItems.map(
+                        (item: {
+                            href: string;
+                            target: string;
+                            name: string;
+                            isArrow: boolean;
+                        }) => (
+                            <li class="header-nav--menu-item">
+                                <a
+                                    href={item.href}
+                                    class={`menu-item--link flex items-center ${
+                                        Astro.url.pathname === item.href
+                                            ? "active"
+                                            : ""
+                                    }
                                     `}
-                                target={item.target ? item.target : "_self"}
-                            >
-                                {item.name}
-                                {item.isArrow && (
-                                    <span class="ml-2 inline-block text-sm font-medium text-inherit">
-                                        <Icon
-                                            name="mdi:arrow-top-right"
-                                            className="h-6 w-auto"
-                                        />
-                                    </span>
-                                )}
-                            </a>
-                        </li>
-                    ))
+                                    target={item.target ? item.target : "_self"}
+                                >
+                                    {item.name}
+                                    {item.isArrow && (
+                                        <span class="ml-2 inline-block text-sm font-medium text-inherit">
+                                            <Icon
+                                                name="mdi:arrow-top-right"
+                                                className="h-6 w-auto"
+                                            />
+                                        </span>
+                                    )}
+                                </a>
+                            </li>
+                        )
+                    )
                 }
             </ul>
         </div>

@@ -16,45 +16,55 @@ const { accordionData } = Astro.props;
     class="accordion--container my-16 drop-shadow-xl max-w-3xl w-full mx-auto offset-y-0 offset-x-8"
 >
     {
-        accordionData.map((accordionItem, index) => (
-            <div
-                id={accordionItem.id}
-                class={clsx(
-                    "accordion-item--container border border-neutral-200 bg-white overflow-hidden",
-                    {
-                        [accordionItemType.top]: index === 0,
-                        [accordionItemType.default]:
-                            index > 0 && index < accordionData.length - 1,
-                        [accordionItemType.bottom]:
-                            index === accordionData.length - 1
-                    }
-                )}
-            >
-                <h2 class="accordion-item--heading mb-0">
-                    <button
-                        class="group relative flex w-full font-semibold items-center rounded-t-lg border-0 bg-white py-4 px-5 text-left text-base text-neutral-800 transition"
-                        type="button"
-                        aria-expanded={accordionItem.isOpen}
-                    >
-                        {accordionItem.title}
-                        <Icon
-                            name="mdi:chevron-up"
-                            class="ml-auto h-8 w-8 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out motion-reduce:transition-none"
-                        />
-                    </button>
-                </h2>
-                <div class="accordion-item--content py-4 px-5 text-base hidden">
-                    <p>{accordionItem.content}</p>
+        accordionData.map(
+            (
+                accordionItem: {
+                    id: string;
+                    isOpen: boolean;
+                    title: string;
+                    content: string;
+                },
+                index: number
+            ) => (
+                <div
+                    id={accordionItem.id}
+                    class={clsx(
+                        "accordion-item--container border border-neutral-200 bg-white overflow-hidden",
+                        {
+                            [accordionItemType.top]: index === 0,
+                            [accordionItemType.default]:
+                                index > 0 && index < accordionData.length - 1,
+                            [accordionItemType.bottom]:
+                                index === accordionData.length - 1
+                        }
+                    )}
+                >
+                    <h2 class="accordion-item--heading mb-0">
+                        <button
+                            class="group relative flex w-full font-semibold items-center rounded-t-lg border-0 bg-white py-4 px-5 text-left text-base text-neutral-800 transition"
+                            type="button"
+                            aria-expanded={accordionItem.isOpen}
+                        >
+                            {accordionItem.title}
+                            <Icon
+                                name="mdi:chevron-up"
+                                class="ml-auto h-8 w-8 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out motion-reduce:transition-none"
+                            />
+                        </button>
+                    </h2>
+                    <div class="accordion-item--content py-4 px-5 text-base hidden">
+                        <p>{accordionItem.content}</p>
+                    </div>
                 </div>
-            </div>
-        ))
+            )
+        )
     }
 </SectionContainer>
 
 <script>
-    let activeAccordion = null;
+    let activeAccordion: any = null;
 
-    const accordionClickHandle = (id) => {
+    const accordionClickHandle = (id: any) => {
         activeAccordion = id === activeAccordion ? null : id;
         updateAccordionVisibility();
     };

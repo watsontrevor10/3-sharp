@@ -2,13 +2,7 @@
 import SectionContainer from "@/components/SectionContainer.astro";
 import { getTextAlign } from "@/utils/helper";
 
-const {
-    link = "",
-    class: className,
-    alignment,
-    target = "",
-    type = "default"
-} = Astro.props;
+const { link = "", class: className, alignment } = Astro.props;
 
 const Element = link ? "a" : "div";
 const href =
