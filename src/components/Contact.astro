@@ -20,7 +20,11 @@ import SectionContainer from "./SectionContainer.astro";
             <label for="request">What is your request?</label>
             <textarea id="request" wrap="soft" name="request" required
             ></textarea>
-            <button type="submit" class="btn btn--secondary">Submit</button>
+            <button
+                type="submit"
+                class="btn btn--secondary"
+                onclick="fathom.trackEvent('submit-form');">Submit</button
+            >
         </form>
     </div>
 </SectionContainer>

@@ -21,7 +21,11 @@ import { Image } from "@astrojs/image/components";
         <div class="mt-6 mb-16 text-center">
             <ButtonGroup alignment="center">
                 <Button href="#about" variant="secondary">Meet the Band</Button>
-                <Button href="#contact" variant="secondary">
+                <Button
+                    href="#contact"
+                    variant="secondary"
+                    onclick="fathom.trackEvent('contact-btn');"
+                >
                     Book The Band
                 </Button>
             </ButtonGroup>
