@@ -4,7 +4,7 @@ import SectionContainer from "./SectionContainer.astro";
 
 <SectionContainer class="flex justify-center">
     <div class="request-form">
-        <form netlify netlify-honeypot name="request" method="POST" action="">
+        <form netlify netlify-honeypot name="request" method="POST">
             <p class="hidden">
                 <label>
                     Don’t fill this out if you’re human: <input
@@ -12,7 +12,7 @@ import SectionContainer from "./SectionContainer.astro";
                     />
                 </label>
             </p>
-            <input type="hidden" name="form-name" value="feedback" />
+            <input type="hidden" name="form-name" value="request" />
             <label for="name">Name</label>
             <input id="name" type="text" name="name" />
             <label for="email">Email</label>
