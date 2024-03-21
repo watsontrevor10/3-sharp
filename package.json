@@ -32,7 +32,7 @@
         "@astrojs/rss": "^2.3.2",
         "@astrojs/sitemap": "^1.2.2",
         "@astrojs/tailwind": "^3.1.1",
-        "@fontsource-variable/domine": "^5.0.17",
+        "@fontsource/merriweather": "^5.0.12",
         "@resvg/resvg-js": "^2.4.1",
         "astro": "^2.3.0",
         "astro-icon": "^0.8.1",
