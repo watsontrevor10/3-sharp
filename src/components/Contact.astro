@@ -4,7 +4,13 @@ import SectionContainer from "./SectionContainer.astro";
 
 <SectionContainer class="flex justify-center">
     <div class="request-form">
-        <form netlify netlify-honeypot name="request" method="POST">
+        <form
+            netlify
+            netlify-honeypot
+            name="request"
+            method="POST"
+            onsubmit="fathom.trackEvent('form-submit');"
+        >
             <p class="hidden">
                 <label>
                     Don’t fill this out if you’re human: <input
@@ -20,11 +26,7 @@ import SectionContainer from "./SectionContainer.astro";
             <label for="request">What is your request?</label>
             <textarea id="request" wrap="soft" name="request" required
             ></textarea>
-            <button
-                type="submit"
-                class="btn btn--secondary"
-                onclick="fathom.trackEvent('submit-form');">Submit</button
-            >
+            <button type="submit" class="btn btn--secondary">Submit</button>
         </form>
     </div>
 </SectionContainer>
