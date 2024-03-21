@@ -4,8 +4,8 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                body: ["Inter", "Sans Serif"],
-                title: ["Inter", "Sans Serif"]
+                body: ["Domine", "serif"],
+                title: ["Domine", "serif"]
             },
             fontSize: {
                 body: [
