@@ -15,6 +15,18 @@ import Card from "@/components/card/Card.astro";
 import CardBody from "@/components/card/CardBody.astro";
 import CardImage from "@/components/card/CardImage.astro";
 import CardHeader from "@/components/card/CardHeader.astro";
+import { YouTube } from "astro-embed";
+
+const videos = [
+    {
+        title: "3# Plays Take The 'A' Train",
+        id: "https://youtu.be/YBFQ2aVHFZ4?si=q_5u4M0A3L1_MBOh"
+    },
+    {
+        title: "Trevor Plays all the Notes - 3# studio jam session",
+        id: "https://youtu.be/PM4urAWHFKY?si=Rrp5fzl4t8whlfGL"
+    }
+];
 ---
 
 <Layout
@@ -135,51 +147,44 @@ import CardHeader from "@/components/card/CardHeader.astro";
                 <PageTitle class="text-center mx-auto pt-3" type="default">
                     Hear What 3# Has to Offer
                 </PageTitle>
-                <Content
-                    class="flex wrap gap-10 max-w-4xl mx-auto"
-                    alignment="center"
+                <SectionContainer
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8"
                 >
-                    <div class="col-span-1">
-                        <iframe
-                            width="460"
-                            height="315"
-                            src="https://www.youtube.com/embed/YBFQ2aVHFZ4?si=ot-3-Q26zk68NcUH"
-                            title="3# Plays Take The 'A' Train"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
-                    </div>
-                    <div class="col-span-1">
-                        <iframe
-                            width="460"
-                            height="315"
-                            src="https://www.youtube.com/embed/PM4urAWHFKY?si=P3kJqT3ynFBSHYWP"
-                            title="Trevor Plays all the Notes - 3# studio jam session"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
-                    </div>
-                </Content>
-                <!-- add these back in when we get reviews in -->
-                <!-- <Column columnData={testimonialData} /> -->
+                    {
+                        videos.map((video) => (
+                            <div class="">
+                                <YouTube
+                                    id={video.id}
+                                    title={video.title}
+                                    class=""
+                                />
+                            </div>
+                        ))
+                    }
+                </SectionContainer>
             </SectionContainer>
-            <!-- Contact -->
-            <SectionContainer
-                id="contact"
-                class="page-banner--inner-container wrap wrap-px z-10 pt-20"
-            >
-                <PageTitle class="text-center mx-auto" type="default">
-                    Contact The Band
-                </PageTitle>
-                <Contact />
-            </SectionContainer>
-            <!-- Testimonials -->
-            <SectionContainer id="faq" class="faq">
-                <PageTitle class="text-center mx-auto pt-5" type="default">
-                    Frequently Asked Questions
-                </PageTitle>
-                <Accordion accordionData={faqData} />
-            </SectionContainer>
+            <!-- add these back in when we get reviews in -->
+            <!-- <Column columnData={testimonialData} /> -->
+        </SectionContainer>
+        <!-- Contact -->
+        <SectionContainer
+            id="contact"
+            class="page-banner--inner-container wrap wrap-px z-10 pt-20"
+        >
+            <PageTitle class="text-center mx-auto" type="default">
+                Contact The Band
+            </PageTitle>
+            <Contact />
+        </SectionContainer>
+        <!-- Testimonials -->
+        <SectionContainer id="faq" class="faq">
+            <PageTitle class="text-center mx-auto pt-5" type="default">
+                Frequently Asked Questions
+            </PageTitle>
+            <Accordion accordionData={faqData} />
         </SectionContainer>
     </div>
-    <!-- FAQ -->
 </Layout>
+<!-- FAQ -->
+
 <!-- Components Container -->
