@@ -135,15 +135,29 @@ import CardHeader from "@/components/card/CardHeader.astro";
                 <PageTitle class="text-center mx-auto pt-3" type="default">
                     Hear What 3# Has to Offer
                 </PageTitle>
-                <div class="flex justify-center">
-                    <iframe
-                        width="560"
-                        height="315"
-                        src="https://www.youtube.com/embed/YBFQ2aVHFZ4?si=ot-3-Q26zk68NcUH"
-                        title="3# Plays Take The 'A' Train"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-                </div>
+                <Content
+                    class="flex wrap gap-10 max-w-4xl mx-auto"
+                    alignment="center"
+                >
+                    <div class="col-span-1">
+                        <iframe
+                            width="460"
+                            height="315"
+                            src="https://www.youtube.com/embed/YBFQ2aVHFZ4?si=ot-3-Q26zk68NcUH"
+                            title="3# Plays Take The 'A' Train"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="col-span-1">
+                        <iframe
+                            width="460"
+                            height="315"
+                            src="https://www.youtube.com/embed/PM4urAWHFKY?si=P3kJqT3ynFBSHYWP"
+                            title="Trevor Plays all the Notes - 3# studio jam session"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </Content>
                 <!-- add these back in when we get reviews in -->
                 <!-- <Column columnData={testimonialData} /> -->
             </SectionContainer>

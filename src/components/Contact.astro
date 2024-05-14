@@ -1,9 +1,10 @@
 ---
 import SectionContainer from "./SectionContainer.astro";
+import Icon from "astro-icon";
 ---
 
 <SectionContainer class="flex justify-center">
-    <div class="request-form">
+    <SectionContainer class="request-form">
         <form
             netlify
             netlify-honeypot
@@ -23,12 +24,24 @@ import SectionContainer from "./SectionContainer.astro";
             <input id="name" type="text" name="name" />
             <label for="email">Email</label>
             <input id="email" type="email" name="email" required />
-            <label for="request">What is your request?</label>
+            <label for="request"
+                >Tell us about your event: date, location, number of attendees,
+                hours of music needed, etc. Or just ask a question!</label
+            >
             <textarea id="request" wrap="soft" name="request" required
             ></textarea>
             <button type="submit" class="btn btn--secondary">Submit</button>
         </form>
-    </div>
+    </SectionContainer>
+    <br />
+</SectionContainer>
+<SectionContainer class="flex justify-center">
+    <a role="button" href="https://www.instagram.com/3sharptrio">
+        <Icon name="mdi:instagram" class="h-12 mr-12 text-secondary-500 flex" />
+    </a>
+    <a role="button" href="https://www.youtube.com/@3SharpJazz">
+        <Icon name="mdi:youtube" class="h-12 mr-12 text-secondary-500 flex" />
+    </a>
 </SectionContainer>
 
 <style>
