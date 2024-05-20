@@ -35,6 +35,35 @@ const {
             data-site="HCHZUUJC"
             defer></script>
         <!-- / Fathom -->
+
+        <!-- Fathom - track all external link clicks -->
+        <script>
+            window.addEventListener("load", (event) => {
+                document.querySelectorAll("a").forEach((item: any) => {
+                    item.addEventListener("click", () => {
+                        let linkUrl = new URL(
+                            item.getAttribute("href"),
+                            window.location.href
+                        );
+                        let currentHostname = window.location.hostname;
+
+                        if (linkUrl.hostname !== currentHostname) {
+                            // If the link's hostname is different from the current page's hostname
+                            let domainParts = linkUrl.hostname.split(".");
+                            let domainName =
+                                domainParts.length > 1
+                                    ? domainParts[domainParts.length - 2]
+                                    : domainParts[0];
+
+                            const message = `External link clicked: ${domainName}`;
+                            console.log(message);
+                            // @ts-ignore
+                            fathom.trackEvent(message);
+                        }
+                    });
+                });
+            });
+        </script>
     </head>
     <body>
         <main class={`main relative overflow-hidden ${className && className}`}>
